@@ -50,6 +50,8 @@ cc_library_shared {
 cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
+    header_libs: ["libgui_headers"],
+    include_dirs: ["frameworks/native/libs/gui/include"],
     srcs: [
         "libgui/GraphicBufferProducer.cpp",
         "libgui/SurfaceComposerClient.cpp",
