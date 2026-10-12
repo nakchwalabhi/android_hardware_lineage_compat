@@ -663,6 +663,7 @@ cc_library_shared {
     defaults: ["libgui_shim_defaults"],
     srcs: ["libgui/BufferItemConsumer.cpp"],
     shared_libs: [
+        "libgui",
         "libgui_vendor",
         "libutils",
     ],
